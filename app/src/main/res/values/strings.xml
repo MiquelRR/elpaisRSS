@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">elpais</string>
+    <string name="first_image_url">https://srv00.epimg.net/pdf/elpais/snapshot/elpaisToday.jpg</string>
+    <string name="is_first_run">isFirstRun</string>
+    <string name="stored_user_name">stored_user_name</string>
+    <string name="stored_user_pass">stored_user_pwd</string>
+    <string name="chosen_category">chosen_category</string>
+    <string name="lorem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</string>
+    <string name="link_text">ver noticia</string>
+    <string name="image_description">imagen de la noticia</string>
+    <string name="default_rss_url">https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada</string>
+</resources>

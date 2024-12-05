@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <!-- Guideline superior (20% del alto del contenedor) -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.2"
+        android:orientation="horizontal" />
+
+    <!-- TextInput para nombre -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="text|textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- TextInput para contraseña -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutName"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="text|textPassword" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- RadioGroup con tres columnas -->
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout"
+        app:columnCount="3"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <RadioButton
+            android:id="@+id/radioOptionA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción A" />
+
+        <RadioButton
+            android:id="@+id/radioOptionB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción B" />
+
+        <RadioButton
+            android:id="@+id/radioOptionC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción C" />
+
+        <RadioButton
+            android:id="@+id/radioOptionD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción D" />
+
+        <RadioButton
+            android:id="@+id/radioOptionE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción E" />
+
+        <RadioButton
+            android:id="@+id/radioOptionF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opción F" />
+    </androidx.gridlayout.widget.GridLayout>
+
+
+
+    <!-- Botón debajo del Guideline medio -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup" />
+
+    <!-- Guideline inferior (80% del alto del contenedor) -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.8"
+        android:orientation="horizontal" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
